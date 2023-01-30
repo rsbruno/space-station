@@ -1,7 +1,46 @@
-@import '@/styles/constants';
+@import "@/styles/constants";
 
 .container {
   width: 100%;
   height: 100%;
   background: $DARK_900;
+  display: flex;
+  &__certificates {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+
+    &__container {
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: $DARK_500;
+    }
+  }
+
+  .knowledge {
+    width: 800px;
+    height: 100%;
+    padding-top: 50px;
+    &__components {
+      margin-top: 15px;
+    }
+    &__container {
+      width: 70%;
+      height: min-content;
+      background: $DARK_500;
+      padding: 25px;
+      border-radius: 8px;
+
+      &__title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.3rem;
+      }
+    }
+  }
 }

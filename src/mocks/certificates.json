@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "type": "Curso",
+    "logo": "/assets/stacks/java/java_yellow.svg",
+    "name": "Java JRE e JDK: compile e execute o seu programa",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 70,
+    "coverColor": "#F7B541"
+  },
+  {
+    "id": 1,
+    "type": "Curso",
+    "logo": "/assets/stacks/react/react_green.svg",
+    "name": "React: escrevendo com Typescript",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#52A8AA"
+  },
+  {
+    "id": 2,
+    "type": "Curso",
+    "logo": "/assets/stacks/react/react_purple.svg",
+    "name": "React: lidando com arquivos estáticos",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#A475EF"
+  }
+]

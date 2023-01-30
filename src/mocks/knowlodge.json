@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Typescript",
+    "logo": "/assets/stacks/laravel.svg",
+    "experience": "EXPERIENT"
+  },
+  {
+    "id": 1,
+    "name": "Typescript",
+    "logo": "/assets/stacks/vue.svg",
+    "experience": "STUDYNG"
+  },
+  {
+    "id": 2,
+    "name": "Typescript",
+    "logo": "/assets/stacks/c_charp.svg",
+    "experience": "INTEREST"
+  },
+  {
+    "id": 3,
+    "name": "Typescript",
+    "logo": "/assets/stacks/java.svg",
+    "experience": "EXPERIENT"
+  }
+]

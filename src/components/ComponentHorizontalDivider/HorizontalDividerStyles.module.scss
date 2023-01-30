@@ -1,0 +1,15 @@
+@import "@/styles/constants";
+
+.container {
+  width: 100%;
+  height: min-content;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__divider {
+    display: block;
+    height: 1px;
+    background: $PRIMARY_900;
+  }
+}

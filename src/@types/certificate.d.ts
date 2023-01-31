@@ -1,13 +1,14 @@
 declare type ICertificate = {
     id: number,
-    type: string,
+    classification: string,
     logo: string,
     name: string,
     instituition: {
         name: string,
         logo: string
     },
-    completedLevel: number,
-    coverColor: string,
-    status: "FINISHED" | "PROGRESS" | "INTEREST"
+    percentLevel: number,
+    covercolor: string,
+    certicateStatus: "FINISHED" | "PROGRESS" | "INTEREST",
+    focusStack: string
 }

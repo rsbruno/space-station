@@ -12,7 +12,7 @@ export function SectionStacksComponent(props: ISectionStacksComponentProps) {
             <ul>
                 {props.stacks.map(knowledge => <li key={knowledge.id}>
                     <div className={styles.itemlanguage}>
-                        <Image src={knowledge.logo} alt="" className={styles.itemlanguage__logo} />
+                        <Image width={32} height={32} src={knowledge.logo} alt="" className={styles.itemlanguage__logo} />
                     </div>
                 </li>)}
             </ul>

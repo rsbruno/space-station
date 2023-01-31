@@ -2,6 +2,7 @@ import styles from './CertificateStyles.module.scss'
 import { TbCertificate } from 'react-icons/tb'
 import { StatusBarComponent } from '@/components/ComponentStatusBar/StatusBarComponent'
 import { CiLocationArrow1 } from 'react-icons/ci'
+import Image from 'next/image';
 
 interface ICertificateComponentProps {
     id: number;
@@ -23,14 +24,14 @@ export default function CertificateComponent(props: ICertificateComponentProps) 
                 <h3 className={styles.container__details__typecourse}>{props.type}</h3>
                 <div className={styles.container__details__course}>
                     {props.logo && <>
-                        <img src={props.logo} alt="" className={styles.container__details__course__logo} />
+                        <Image src={props.logo} alt="" className={styles.container__details__course__logo} />
                     </>}
                     <h2 className={styles.container__details__course__name}>{props.name}</h2>
                 </div>
             </main>
             <footer className={styles.container__status}>
                 <aside className={styles.container__status__institution}>
-                    <img src={props.instituition.logo} alt={props.instituition.name} />
+                    <Image src={props.instituition.logo} alt={props.instituition.name} />
                 </aside>
                 <div className={styles.statuscontainer}>
                     <div className={styles.statuscontainer__content}>

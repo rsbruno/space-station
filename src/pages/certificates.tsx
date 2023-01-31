@@ -8,6 +8,7 @@ import { HorizontalDividerComponent } from '@/components/ComponentHorizontalDivi
 import { certificatesService } from '@/services/certificatesService'
 import { stackService } from '@/services/stackService'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export const getStaticProps: GetStaticProps = async () => {
     const certificatesFinisheds = await certificatesService.getAllByStatus("FINISHED")
@@ -46,7 +47,7 @@ function CertificatesPage({ certificatesFinisheds, certificatesProgress, stacksE
             <section className={styles.container__knowledge}>
                 <div className={styles.college__container}>
                     <div className={styles.college__container__logo}>
-                        <img src="/assets/instituitions/college_logo.jpg" alt="" className={styles.college__container__logo__img} />
+                        <Image src="/assets/instituitions/college_logo.jpg" alt="" className={styles.college__container__logo__img} />
                     </div>
                     <h2 className={styles.college__container__title}>Formação Acadêmica</h2>
                     <h6 className={styles.college__container__description}>Bacharelado em Ciência da Computação pela</h6>

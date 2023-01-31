@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "type": "Curso",
+    "type": "Curso > Java",
     "logo": "/assets/stacks/java/java_yellow.svg",
     "name": "Java JRE e JDK: compile e execute o seu programa",
     "instituition": {
@@ -14,7 +14,7 @@
   },
   {
     "id": 1,
-    "type": "Curso",
+    "type": "Curso > React",
     "logo": "/assets/stacks/react/react_green.svg",
     "name": "React: escrevendo com Typescript",
     "instituition": {
@@ -27,7 +27,7 @@
   },
   {
     "id": 2,
-    "type": "Curso",
+    "type": "Curso > React",
     "logo": "/assets/stacks/react/react_purple.svg",
     "name": "React: lidando com arquivos estáticos",
     "instituition": {
@@ -40,7 +40,7 @@
   },
   {
     "id": 3,
-    "type": "Curso",
+    "type": "Curso > NextJs",
     "logo": "/assets/stacks/nextjs_purple.svg",
     "name": "Next.js: explorando o framework",
     "instituition": {
@@ -53,7 +53,7 @@
   },
   {
     "id": 3,
-    "type": "Curso",
+    "type": "Curso > Java",
     "logo": "/assets/stacks/java_blue.svg",
     "name": "Java OO: entendendo a Orientação a Objetos",
     "instituition": {

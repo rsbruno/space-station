@@ -14,6 +14,7 @@ export function PaginationComponent({ totalPages }: IPaginationComponentProps) {
             <div className={styles.container__listpages}>
                 {Array.from(Array(totalPages).keys()).map(page => <>
                     <Buttons.OnlyLabelComponent
+                        style={{ width: '40px', height: '40px' }}
                         onClick={() => setPageNumber(page + 1)}
                         active={currentPage === page + 1}
                         label={(page + 1).toString()}

@@ -1,7 +1,10 @@
 import axios from 'axios'
 
 export const instanceAxios = axios.create({
-    baseURL: 'http://localhost:3000/api',
+    baseURL: 'https://graphql.datocms.com/',
     timeout: 1000,
-    headers: { 'X-Custom-Header': 'foobar' }
+    headers: {
+        'Content-type': 'application/json',
+        'Authorization': `Bearer 1433cb398fcf0cd62c458c447b450f`
+    }
 });

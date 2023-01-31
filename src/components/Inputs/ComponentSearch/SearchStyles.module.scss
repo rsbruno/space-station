@@ -1,0 +1,41 @@
+@import "@/styles/constants";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  border: solid 1px transparent;
+  padding: 0 8px;
+  border-radius: 4px;
+  width: 40px;
+  transition: all ease-in 400ms;
+  &:focus-within {
+    width: 300px;
+  }
+  input {
+    &::placeholder {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.theme__dark__primary {
+  &:hover {
+    background: $DARK_900;
+  }
+
+  &:focus-within {
+    border: solid 1px $PRIMARY_900;
+    background: $DARK_900;
+  }
+  .container__input {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1rem;
+  }
+}

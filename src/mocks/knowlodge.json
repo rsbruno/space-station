@@ -15,12 +15,18 @@
     "id": 2,
     "name": "Typescript",
     "logo": "/assets/stacks/c_charp.svg",
-    "experience": "INTEREST"
+    "experience": "EXPERIENT"
   },
   {
     "id": 3,
     "name": "Typescript",
     "logo": "/assets/stacks/java.svg",
+    "experience": "EXPERIENT"
+  },
+  {
+    "id": 4,
+    "name": "Typescript",
+    "logo": "/assets/stacks/nextjs.svg",
     "experience": "EXPERIENT"
   }
 ]

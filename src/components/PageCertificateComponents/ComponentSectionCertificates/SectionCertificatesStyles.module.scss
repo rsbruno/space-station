@@ -18,6 +18,9 @@
         color: #fff;
         font-size: 1.3rem;
         white-space: nowrap;
+        @media (max-width: 460px) {
+          font-size: 1rem;
+        }
       }
       &__description {
         font-family: "Open Sans", sans-serif;
@@ -26,22 +29,58 @@
         font-size: 0.8rem;
         margin-top: 8px;
         white-space: nowrap;
+        @media (max-width: 460px) {
+          font-size: .8rem;
+        }
       }
     }
     &__filters {
       min-width: min-content;
       display: flex;
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
   }
 
   &__main {
     width: 100%;
     &__listcertificates {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-areas:
+        "certificate certificate certificate certificate"
+        "certificate certificate certificate certificate";
       gap: 10px;
+      grid-template-columns: repeat(4, 250px);
+      margin-bottom: 8px;
+
+      @media (max-width: 1610px) {
+        grid-template-areas:
+          "certificate certificate certificate"
+          "certificate certificate certificate";
+        grid-template-columns: repeat(3, 33%);
+      }
+
+      @media (max-width: 870px) {
+        grid-template-areas:
+          "certificate certificate"
+          "certificate certificate";
+        grid-template-columns: repeat(2, 250px);
+      }
+
+      @media (max-width: 600px) {
+        grid-template-areas:
+          "certificate"
+          "certificate";
+        grid-template-columns: 350px;
+      }
+
+      @media (max-width: 460px) {
+        grid-template-areas:
+          "certificate"
+          "certificate";
+        grid-template-columns: 300px;
+      }
     }
   }
 }

@@ -1,15 +1,15 @@
-import styles from './KnowlodgeItensStyles.module.scss'
+import styles from './SectionStacksStyles.module.scss'
 
-interface ISectionKnowlodgeComponentProps {
+interface ISectionStacksComponentProps {
     title: string;
-    knowledges: any[]
+    stacks: any[]
 }
-export function SectionKnowlodgeComponent(props: ISectionKnowlodgeComponentProps) {
+export function SectionStacksComponent(props: ISectionStacksComponentProps) {
     return <>
         <section className={styles.listexperience}>
             <h2 className={styles.listexperience__title}>{props.title}</h2>
             <ul>
-                {props.knowledges.map(knowledge => <li>
+                {props.stacks.map(knowledge => <li>
                     <div className={styles.itemlanguage}>
                         <img src={knowledge.logo} alt="" className={styles.itemlanguage__logo} />
                     </div>

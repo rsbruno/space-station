@@ -1,8 +1,16 @@
 @import "@/styles/constants";
 
 .container {
-  width: 33%;
+  grid-area: "certificate";
+  // width: 100%;
+  min-width: 250px;
   max-width: 250px;
+
+  @media (max-width: 600px) {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
   height: 120px;
   position: relative;
   border-radius: 4px;

@@ -2,7 +2,7 @@
   {
     "id": 0,
     "type": "Curso > Java",
-    "logo": "/assets/stacks/java/java_yellow.svg",
+    "logo": "/assets/stacks/java_yellow.svg",
     "name": "Java JRE e JDK: compile e execute o seu programa",
     "instituition": {
       "name": "Alura",
@@ -15,7 +15,7 @@
   {
     "id": 1,
     "type": "Curso > React",
-    "logo": "/assets/stacks/react/react_green.svg",
+    "logo": "/assets/stacks/react_green.svg",
     "name": "React: escrevendo com Typescript",
     "instituition": {
       "name": "Alura",
@@ -28,7 +28,7 @@
   {
     "id": 2,
     "type": "Curso > React",
-    "logo": "/assets/stacks/react/react_purple.svg",
+    "logo": "/assets/stacks/react_purple.svg",
     "name": "React: lidando com arquivos estáticos",
     "instituition": {
       "name": "Alura",
@@ -52,7 +52,7 @@
     "status": "FINISHED"
   },
   {
-    "id": 3,
+    "id": 4,
     "type": "Curso > Java",
     "logo": "/assets/stacks/java_blue.svg",
     "name": "Java OO: entendendo a Orientação a Objetos",
@@ -65,7 +65,7 @@
     "status": "PROGRESS"
   },
   {
-    "id": 3,
+    "id": 5,
     "type": "Curso > NextJs",
     "logo": "/assets/stacks/nextjs_pink.svg",
     "name": "Next.js: tour pelo Next.js",
@@ -78,7 +78,7 @@
     "status": "FINISHED"
   },
   {
-    "id": 3,
+    "id": 6,
     "type": "Curso > NextJs",
     "logo": "/assets/stacks/nextjs_green.svg",
     "name": "Next.js: autenticação e gerenciamento de Tokens",
@@ -89,5 +89,31 @@
     "completedLevel": 0,
     "coverColor": "#9FD344",
     "status": "PROGRESS"
+  },
+  {
+    "id": 7,
+    "type": "Curso > React Native",
+    "logo": "/assets/stacks/react_purple.svg",
+    "name": "React Native: Desenvolva APPs Nativas para Android e iOS",
+    "instituition": {
+      "name": "Udemy",
+      "logo": "/assets/instituitions/udemy.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#A475EF",
+    "status": "FINISHED"
+  },
+  {
+    "id": 8,
+    "type": "Curso > C#",
+    "logo": "/assets/stacks/react_purple.svg",
+    "name": "Curso de ASP NET Core 2.0 com SQL Server",
+    "instituition": {
+      "name": "Udemy",
+      "logo": "/assets/instituitions/udemy.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#00B3D1",
+    "status": "FINISHED"
   }
 ]

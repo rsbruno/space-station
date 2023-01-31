@@ -3,36 +3,142 @@
 .container {
   width: 100%;
   height: 100%;
+  overflow: auto;
   background: $DARK_900;
   display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  @media (max-width: 1260px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  @media (max-width: 1025px) {
+    height: auto;
+  }
+
   &__certificates {
-    width: 100%;
-    margin: 25px;
+    width: min-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-}
-
-.knowledge {
-  width: 800px;
-  height: 100%;
-  padding-top: 50px;
-  &__components {
-    margin-top: 15px;
-  }
-  &__container {
-    width: 70%;
+  &__knowledge {
+    margin-left: 20px;
+    width: 500px;
     height: min-content;
     background: $DARK_500;
+    border-radius: 6px;
     padding: 25px;
-    border-radius: 8px;
 
-    &__title {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      color: #fff;
-      font-size: 1.3rem;
+    @media (max-width: 1370px) {
+      width: 390px;
     }
+
+    @media (max-width: 1260px) {
+      display: flex;
+      width: 820px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 870px) {
+      display: flex;
+      width: 560px;
+      margin-left: 0;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+      display: flex;
+      width: 400px;
+      margin-left: 0;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    @media (max-width: 460px) {
+      display: flex;
+      width: 351px;
+      margin-left: 0;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    .college__container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__logo {
+        width: 150px;
+        height: 150px;
+        border: solid 2px $PRIMARY_900;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__img {
+          // border: solid 2px $PRIMARY_900;
+          width: 90%;
+          resize: both;
+          border-radius: 50%;
+        }
+      }
+      &__title {
+        margin-top: 10px !important;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        position: relative;
+        &::after {
+          position: absolute;
+          top: -22px;
+          right: -40px;
+          content: "Em andamento";
+          display: block;
+          background: $PRIMARY_900;
+          padding: 5px;
+          width: min-content;
+          color: #fff;
+          font-size: 0.7rem;
+          border-radius: 4px;
+        }
+      }
+      &__description {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        color: #ddd;
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.stackscontainer {
+  @media (max-width: 1260px) {
+    width: 50%;
+  }
+
+  @media (max-width: 870px) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 460px) {
+    width: 100%;
+  }
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
   }
 }

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
     <g clip-path="url(#clip0)">
-        <path
+        <!-- <path
             d="M45 0H5C2.23858 0 0 2.23858 0 5V45C0 47.7614 2.23858 50 5 50H45C47.7614 50 50 47.7614 50 45V5C50 2.23858 47.7614 0 45 0Z"
-            fill="#E535AB" />
+            fill="#E535AB" /> -->
         <path d="M50 9.5L24.2805 11.4709V37.9766L50 39V9.5Z" fill="url(#paint0_linear)" />
         <path d="M50 38.9283L16.9008 19.6255H0V51.5808H50V38.9283Z" fill="url(#paint1_linear)" />
         <path d="M0 38.6663L50 9.5059V-2H0V38.6663Z" fill="url(#paint2_linear)" />

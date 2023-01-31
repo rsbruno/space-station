@@ -1,5 +1,20 @@
 @import "@/styles/constants";
 .listexperience {
+  margin-top: 15px;
+  position: relative;
+  padding-left: 15px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    background: $PRIMARY_900;
+  }
+
   &__title {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -16,7 +31,7 @@
       list-style: none;
     }
     li:not(:first-child) {
-      margin-left: -10px;
+      margin-left: -12px;
     }
   }
 }
@@ -24,15 +39,17 @@
 .itemlanguage {
   width: 40px;
   height: 40px;
-  background: $PRIMARY_900;
+  background: $DARK_300;
+  border: solid 1px $PRIMARY_900;
   overflow: hidden;
   border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
   &__logo {
-    width: 90%;
+    width: 85%;
     background-size: cover;
-    border-radius: 6px;
+    border-radius: 4px;
+    background: $PRIMARY_900;
   }
 }

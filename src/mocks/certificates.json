@@ -9,7 +9,8 @@
       "logo": "/assets/instituitions/alura.jpeg"
     },
     "completedLevel": 70,
-    "coverColor": "#F7B541"
+    "coverColor": "#F7B541",
+    "status": "FINISHED"
   },
   {
     "id": 1,
@@ -21,7 +22,8 @@
       "logo": "/assets/instituitions/alura.jpeg"
     },
     "completedLevel": 100,
-    "coverColor": "#52A8AA"
+    "coverColor": "#52A8AA",
+    "status": "FINISHED"
   },
   {
     "id": 2,
@@ -33,6 +35,33 @@
       "logo": "/assets/instituitions/alura.jpeg"
     },
     "completedLevel": 100,
-    "coverColor": "#A475EF"
+    "coverColor": "#A475EF",
+    "status": "FINISHED"
+  },
+  {
+    "id": 3,
+    "type": "Curso",
+    "logo": "/assets/stacks/nextjs_purple.svg",
+    "name": "Next.js: explorando o framework",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#A475EF",
+    "status": "FINISHED"
+  },
+  {
+    "id": 3,
+    "type": "Curso",
+    "logo": "/assets/stacks/java_blue.svg",
+    "name": "Java OO: entendendo a Orientação a Objetos",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#00B3D1",
+    "status": "PROGRESS"
   }
 ]

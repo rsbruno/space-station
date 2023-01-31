@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__listpages {
+    display: flex;
+    gap: 5px;
+  }
+}

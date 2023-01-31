@@ -1,0 +1,35 @@
+@import "@/styles/constants.scss";
+
+.container {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: solid 1px $PRIMARY_900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  &__content {
+    min-width: 32px;
+    min-height: 32px;
+    // border: solid 1px $PRIMARY_900;
+    // background: $PRIMARY_900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    &__label {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+}
+
+.container__active {
+  .container__content {
+    background: $PRIMARY_900;
+  }
+}

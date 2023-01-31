@@ -8,7 +8,7 @@
       "name": "Alura",
       "logo": "/assets/instituitions/alura.jpeg"
     },
-    "completedLevel": 70,
+    "completedLevel": 100,
     "coverColor": "#F7B541",
     "status": "FINISHED"
   },
@@ -60,8 +60,34 @@
       "name": "Alura",
       "logo": "/assets/instituitions/alura.jpeg"
     },
-    "completedLevel": 100,
+    "completedLevel": 0,
     "coverColor": "#00B3D1",
+    "status": "PROGRESS"
+  },
+  {
+    "id": 3,
+    "type": "Curso > NextJs",
+    "logo": "/assets/stacks/nextjs_pink.svg",
+    "name": "Next.js: tour pelo Next.js",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 100,
+    "coverColor": "#D579E2",
+    "status": "FINISHED"
+  },
+  {
+    "id": 3,
+    "type": "Curso > NextJs",
+    "logo": "/assets/stacks/nextjs_green.svg",
+    "name": "Next.js: autenticação e gerenciamento de Tokens",
+    "instituition": {
+      "name": "Alura",
+      "logo": "/assets/instituitions/alura.jpeg"
+    },
+    "completedLevel": 0,
+    "coverColor": "#9FD344",
     "status": "PROGRESS"
   }
 ]

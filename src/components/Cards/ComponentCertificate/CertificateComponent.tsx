@@ -1,6 +1,7 @@
 import styles from './CertificateStyles.module.scss'
 import { TbCertificate } from 'react-icons/tb'
 import { StatusBarComponent } from '@/components/ComponentStatusBar/StatusBarComponent'
+import { CiLocationArrow1 } from 'react-icons/ci'
 
 interface ICertificateComponentProps {
     id: number;
@@ -27,20 +28,31 @@ export default function CertificateComponent(props: ICertificateComponentProps) 
                     <h2 className={styles.container__details__course__name}>{props.name}</h2>
                 </div>
             </main>
-
             <footer className={styles.container__status}>
                 <aside className={styles.container__status__institution}>
                     <img src={props.instituition.logo} alt={props.instituition.name} />
                 </aside>
                 <div className={styles.statuscontainer}>
-                    <StatusBarComponent level={props.completedLevel} />
-                    <div className={styles.certificatestatus}>
-                        <TbCertificate size={25} color="#fff" />
-                        <h6 className={styles.certificatestatus__text}>
-                            {props.completedLevel === 100 ? "Acessar certificado" : "Em andamento"}
-                        </h6>
+                    <div className={styles.statuscontainer__content}>
+                        <StatusBarComponent level={props.completedLevel} />
+                        <div className={styles.certificatestatus}>
+                            <h6 className={styles.certificatestatus__text}>
+                                {props.completedLevel === 100 ? "Certificado disponível" : "Em andamento"}
+                            </h6>
+                        </div>
                     </div>
+                    <span className={styles.statuscontainer__certificate} style={{ display: props.completedLevel < 100 ? "none" : "block" }}>
+                        <TbCertificate size={25} stroke="#7ee195" />
+                    </span>
                 </div>
+                <section className={styles.container__status__hover}>
+                    <h2 className={styles.container__status__hover__text}>
+                        {props.completedLevel === 100 ? "Acessar certificado" : "Detalhar curso"}
+                    </h2>
+                    <span className={styles.container__status__hover__icon}>
+                        <CiLocationArrow1 size={25} fill="#fff" />
+                    </span>
+                </section>
             </footer>
         </aside>
     </>

@@ -80,6 +80,7 @@ function CertificatesPage({ certificates, stacksExperient, stacksStudyng }: ICer
                     maxPages={certificates.finisheds.maxPages}
                     certificates={certificatesFinisheds}
                     title='Cursos/Bootcamps Concluídos'
+                    isLoading
                 />
                 <SectionCertificatesComponent
                     description='Os últimos cursos/bootcamps que comecei a fazer'

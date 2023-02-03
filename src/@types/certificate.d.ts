@@ -1,14 +1,33 @@
 declare type ICertificate = {
-    id: number,
-    classification: string,
-    logo: string,
-    name: string,
+    id: string;
+    name: string;
+    logo: string;
     instituition: {
-        name: string,
-        logo: string
+        id: string;
+        name: string;
+        logo: string;
     },
-    percentLevel: number,
-    covercolor: string,
-    certicateStatus: "FINISHED" | "PROGRESS" | "INTEREST",
-    focusStack: string
+    relatedStacks: {
+        id: string;
+        name: string;
+        logo: string;
+    }[],
+    stateCertificate: "FINISHED" | "PROGRESS" | "INTEREST",
+    stackStudied: {
+        id: string;
+        name: string;
+        logo: string;
+    },
+    stateLevel: number;
+    covercolor: {
+        hex: string,
+        red: number,
+        green: number,
+        blue: nuber
+    },
+    classification: {
+        id: string,
+        name: string
+    }
 }
+

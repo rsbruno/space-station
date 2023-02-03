@@ -1,33 +1,43 @@
 import { instanceAxios } from "./axios"
 
-const getAllByStatus = async (status: ICertificate['certicateStatus']): Promise<ICertificate[]> => {
+const getAllByStatus = async (queryParams?: string): Promise<ICertificate[]> => {
     const query = `query{
-        allCertificates{
+        allCertificates${queryParams ? `(${queryParams})` : ""}{
+            id
             name
-            classification
             logo
-            instituition
-            percentLevel
-            covercolor{
-              hex
+            instituition{
+              logo
             }
-            certicateStatus
-            focusStack{
+            stateCertificate
+            stackStudied{
               name
             }
-          }
+            stateLevel
+            covercolor{
+                hex
+            }
+            classification{
+                name
+            }
+        }
     }`
     const { data } = await instanceAxios.post('/', { query }).then(({ data }) => data)
-    const response = data.allCertificates.map((certificate: any) => {
-        return {
-            ...certificate,
-            covercolor: certificate.covercolor.hex,
-            focusStack: certificate.focusStack.name
-        } as ICertificate
-    })
-    return new Promise<ICertificate[]>(resolve => resolve(response))
+    return new Promise<ICertificate[]>(resolve => resolve(data.allCertificates))
 }
 
+const countData = async (queryParams?: string): Promise<number> => {
+    const query = `query{
+        _allCertificatesMeta${queryParams ? `(${queryParams})` : ""}{
+            count
+        }
+    }`
+    const { data } = await instanceAxios.post('/', { query }).then(({ data }) => data)
+    return new Promise<number>(resolve => resolve(data._allCertificatesMeta.count))
+}
+
+
 export const certificatesService = {
-    getAllByStatus
+    getAllByStatus,
+    countData
 }
